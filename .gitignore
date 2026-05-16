@@ -1,0 +1,56 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Raw dataset (too large for GitHub; see Data Set/README.md) ---
+Data Set/*.csv
+Data Set/*.xlsx
+Data Set/*.zip
+
+# --- Generated data artefacts ---
+data/interim/*
+data/processed/*
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# --- Reports artefacts ---
+reports/figures/*.png
+reports/figures/*.svg
+reports/*.pdf
+
+# --- Recommender artefacts ---
+# The small parquet files (factors, indices, catalog, interactions) are
+# committed so reviewers can run the dashboard without retraining ALS.
+# The large content TF-IDF artefact (~216 MB) is excluded.
+models/recommender/content.joblib
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Build / pipeline logs ---
+*.log
+
+# --- Misc ---
+scripts/__pycache__/
