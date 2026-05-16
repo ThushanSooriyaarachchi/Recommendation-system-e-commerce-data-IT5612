@@ -55,5 +55,5 @@ Thumbs.db
 # --- Misc ---
 scripts/__pycache__/
 
-# --- assignment guideline ---
+# --- Assignment guideline (local only; do not publish) ---
 Assignment guideline/
