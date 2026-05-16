@@ -16,7 +16,6 @@ dataset, implementing the full assignment rubric:
 ```
 Assignment/
 ├── Data Set/                       # raw CSV (do not modify)
-├── Assignment guideline/           # rubric PDF
 ├── data/
 │   ├── interim/clean.parquet       # cleaned dataset
 │   └── processed/*.parquet         # KPI / RFM / features
